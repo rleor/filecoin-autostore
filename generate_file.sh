@@ -17,7 +17,7 @@ echo "generating/updating file from seed $1"
 if [[ -w "$2/$raw_filename" ]]
 then
 	# if raw file exists, update first 64 bytes
-	echo $1 | sha256sum | cut -f1 -d' ' | dd of=$raw_filename bs=64 seek=0 count=64 conv=notrunc
+	echo $1 | sha256sum | cut -f1 -d' ' | dd of=$2/$raw_filename bs=64 seek=0 count=64 conv=notrunc
 else
 	# if raw file doesn't exist, generate for the first time
 
