@@ -14,7 +14,8 @@ lotus_host=
 miner_id=t01000
 raw_filename=data.bin
 
-for(( i=$start_seq; i < $total; i++ ))
+total_seq=$(expr start_seq + total)
+for(( i=$start_seq; i < $total_seq; i++ ))
 do
 	# 1. generate file on lotus
 	# local
