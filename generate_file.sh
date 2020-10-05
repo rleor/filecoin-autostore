@@ -29,7 +29,6 @@ else
 	prefix=`echo $1 | sha256sum | cut -f1 -d' '`
 	echo -n "$prefix" >> $2/$raw_filename
 	ks=`expr $3 / 1024`
-	echo $ks
 	for((i=0; i< $ks; i++))
 	do
 		echo -n -e "$block1k" >> $2/$raw_filename

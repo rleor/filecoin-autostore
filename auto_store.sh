@@ -12,6 +12,7 @@ file_size=262144
 lotus_user=
 lotus_host=
 miner_id=t01000
+raw_filename=data.bin
 
 for(( i=$start_seq; i < $total; i++ ))
 do
