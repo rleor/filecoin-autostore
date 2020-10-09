@@ -12,9 +12,10 @@ file_size=262144
 lotus_user=
 lotus_host=
 miner_id=t01000
-raw_filename=data.bin
 
+raw_filename=data.bin
 total_seq=$(expr start_seq + total)
+
 for(( i=$start_seq; i < $total_seq; i++ ))
 do
 	# 1. generate file on lotus

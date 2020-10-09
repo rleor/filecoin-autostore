@@ -55,7 +55,7 @@ do
 
 	# 5.5 spin
 	deal_state=0
-	# wait 5 mins to enter StorageDealCheckForAcceptance
+	# wait at most 5 mins to enter StorageDealCheckForAcceptance
 	count=0
 	while (( deal_state != 13 && count < 60 ))
 	do

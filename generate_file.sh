@@ -5,7 +5,7 @@
 # 
 # deploy on lotus/miner daemon nodes.
 
-raw_filename='data.bin'
+raw_filename="data.bin"
 
 if [[ ! -d "$2" ]]
 then
